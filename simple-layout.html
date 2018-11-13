@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<style>
+		*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:Arial Helvetica sans-serif;
+}
+
+#wrapper{
+  width: 100%;
+  background:#515151;
+}
+
+header{
+  width:960px;
+  overflow:hidden;
+  margin:0 auto;
+}
+
+header h1,
+header a{
+  
+  color:#ffffff;
+}
+
+header h1{
+  float:left;
+  font-size:1.4em;
+  line-height:1.4em;
+  padding:14px 0px;
+}
+
+header ul{
+  overflow:hidden;
+  list-style-type:none;
+  float:right;
+}
+
+header ul li{
+  float:left;
+  padding:0px 3px;
+}
+
+section#banner{
+  height:250px;
+  background:RGB(102,187,51);
+  position:relative;
+}
+
+section#banner ul{
+  position:absolute;
+  right:20%;
+  bottom:5%;
+}
+
+section#banner ul li{
+  list-style:none;
+  float:left;
+  padding:2px 4px;
+  text-align:center;
+}
+
+
+section#banner ul li a{
+  display:block;
+  text-decoration:none;
+  height:20px;
+  width:20px;
+  background:RGB(178,221,153);
+  padding:5px 4px;
+}
+
+section#banner ul li:hover a{
+  background:RGB(224,241,214);
+  padding-top:20px;
+  margin-top:-15px;
+}
+
+section#contain{
+  background:white;
+}
+
+section#contain nav{
+  border-bottom:1px solid RGB(204,204,204);
+  padding:0.5em 0em 0em 0em;
+  
+}
+
+section#contain nav ul{
+  width:960px;
+  margin:0 auto;
+  overflow:hidden;
+  margin-bottom:-1px;
+}
+section#contain nav ul li{
+  list-style:none;
+  float:left;
+}
+section#contain nav ul li a{
+  display:block;
+  text-decoration:none;
+  color:#000;
+  font-size:0.8em;
+  padding:0.5em 1.5em;
+  border-radius:10px 12px 0px 0px;
+  border:1px solid RGB(204,204,204);
+  border-bottom:0px;
+  background:RGB(191,191,191);
+}
+
+section#contain nav li a.selected{
+  background:white;
+}
+
+section#contain .contain_main{
+  width:960px;
+  margin:0 auto;
+}
+
+section#contain .contain_main section{
+  margin-top: 10px;
+}
+section#contain .contain_main .first_area{
+  display:flex;
+  justify-content:space-between;
+}
+
+section#contain .contain_main .first_area article{
+  height:120px;
+  width:32%;
+  border:1px solid RGB(204,204,204);
+  text-align:center;
+}
+
+section#contain .contain_main .first_area article p{
+  position:relative;
+  top:45%;
+}
+
+section#contain .contain_main .second_area{
+  display:flex;
+  justify-content:space-between;
+}
+
+section#contain .contain_main .second_area article{
+  height:120px;
+  width:24%;
+  border:1px solid RGB(204,204,204);
+  text-align:center;
+}
+
+section#contain .contain_main .second_area article p{
+  position:relative;
+  top:45%;
+}
+
+section#contain .contain_main .thirst_area{
+  display:flex;
+  justify-content:space-between;
+}
+
+section#contain .contain_main .thirst_area article{
+  height:120px;
+  width:32%;
+  border:1px solid RGB(204,204,204);
+  text-align:center;
+}
+
+section#contain .contain_main .thirst_area article p{
+  position:relative;
+  top:45%;
+}
+
+footer{
+  background:RGB(102,102,102);
+  height:80px;
+  text-align:center;
+}
+
+footer p{
+  padding:25px;
+  color:white;
+}
+
+
+	</style>
+  </head>
+  <body>
+  <div id="wrapper">
+    <header>
+      <h1>LOGO</h1>
+        <ul>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+    </header>
+    <section id="banner">
+      <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+      </ul>
+    </section>
+    
+    <section id="contain">
+    <nav>
+      <ul>
+        <li><a href="#" class="selected">HOME</a></li>
+        <li><a href="#">PROFILE</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </nav>
+      <section class="contain_main">
+        <section class="first_area">
+          <article>
+            <p>This is Content 1</p>
+          </article>
+
+          <article>
+            <p>MaybeContent 2</p>
+          </article>
+
+          <article>
+            <p>Content 3</p>
+          </article>
+        </section>
+        
+         <section class="second_area">
+           <article>
+            <p>This is Content 4</p>
+          </article>
+        
+          <article>
+            <p>This is Content 5</p>
+          </article>
+
+          <article>
+            <p>Content 6</p>
+          </article>
+
+          <article>
+            <p>Content 7</p>
+          </article>
+        </section>
+        
+         <section class="thirst_area">
+          <article>
+            <p>This is Content 8</p>
+          </article>
+
+          <article>
+            <p>Content 9</p>
+          </article>
+
+          <article>
+            <p>Content 10</p>
+          </article>
+        </section>
+      </section>
+    </section>
+    <footer>
+      <p>&copy;Write By xiaofeng</p>
+    </footer>
+  </div>
+  </body>
+</html>
